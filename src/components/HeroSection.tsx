@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -27,7 +27,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
+    <section className="py-5 md:py-24 relative overflow-hidden">
       <div className="container max-w-4xl mx-auto px-6 md:px-4 relative z-10">
         <motion.div
           className="flex flex-col md:flex-row md:items-center justify-between mb-8"
@@ -48,7 +48,7 @@ export default function HeroSection() {
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              Desarrollador Full Stack 👨‍💻
             </motion.p>
 
             <motion.div
@@ -63,6 +63,16 @@ export default function HeroSection() {
                 <MapPin className="h-4 w-4 mr-2" />
                 📍 {personalInfo.location}
               </motion.div>
+
+              <motion.a
+                href={`tel:${personalInfo.phone}`}
+                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <Phone className="h-4 w-4 mr-2" />
+                📞 {personalInfo.phone}
+              </motion.a>
 
               <motion.a
                 href={`mailto:${personalInfo.email}`}
