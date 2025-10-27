@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Agustin Mejia",
-  location: "Santísima Trinidad - Beni, Bolivia",
+  location: "Santísima Trinidad, Beni - Bolivia",
   email: "agustinmejiamuiba@gmail.com",
   phone: "+59175199157",
   github: "https://github.com/agustinmejia",
@@ -18,7 +18,7 @@ export const workExperience = [
     period: "Feb 2023 - Presente",
     achievements: [
       "Fundador de la Empresa de Desarrollo de Software <DesarrolloCeativo />.",
-      "Encargado de los procesos de planeación, dedarrollo y puesta en producción de los diferentes sistemas.",
+      "Encargado de los procesos de planeación, desarrollo y puesta en producción de los diferentes sistemas.",
     ],
   },
   {
@@ -115,6 +115,7 @@ export const skills = {
     "Google Play Console",
     "Firebase",
     "Nodejs",
+    "Socket.io",
     "Android Studio",
     "Wordpress",
     "Strapi",
@@ -124,7 +125,8 @@ export const skills = {
     "SSH",
     "Thunder Client",
     "GIMP",
-    "Arduino"
+    "IoT",
+    "ESC/POS"
   ],
 };
 
